@@ -1,0 +1,118 @@
+{
+  "$schema": "./schemas/template.schema.json",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "otherthing",
+  "version": "0.1.0",
+  "name": "别样创意 · 创意工作室",
+  "gitUrl": "https://github.com/weelume/otherthing-template",
+  "sceneId": "landing-page",
+  "listed": false,
+  "tags": [
+    "创意工作室",
+    "作品集",
+    "品牌设计",
+    "双语"
+  ],
+  "summary": "手绘网格风格的创意工作室模板；首页和联系页可预览，其他内页待完善。",
+  "accentColor": "#258df7",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "首页 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "联系页 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "首页 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "联系页 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "首页 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "联系页 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "官网",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "contact",
+          "title": "联系",
+          "localizedTitles": {
+            "en": "Contact"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "unlicensed",
+    "file": "docs/LICENSE.md",
+    "summary": "参考站图像的再分发授权尚未确认。",
+    "redistributionAllowed": false
+  },
+  "localizedNames": {
+    "en": "Otherthing · Creative Studio"
+  },
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Framer Motion"
+  ]
+}

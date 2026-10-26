@@ -6,7 +6,7 @@ import { faq } from '../content/common'
 import type { Locale } from '../types'
 
 export function Faq({ locale }: { locale: Locale }) {
-  const [active, setActive] = useState<number | null>(null)
+  const [active, setActive] = useState<number | null>(0)
   const reduced = useReducedMotion()
   return <section className="ot-section ot-faq"><h2>{locale === 'zh' ? '快速解答' : 'Quick answers'}<span aria-hidden="true">?</span></h2><div>{faq.map((item, index) => <article key={item.question.en}>
     <h3><button id={`ot-faq-${index}`} aria-expanded={active === index} aria-controls={`ot-answer-${index}`} onClick={() => setActive(active === index ? null : index)}>{item.question[locale]}<span aria-hidden="true">{active === index ? '−' : '+'}</span></button></h3>

@@ -1,6 +1,6 @@
 # Otherthing 开发约定
 
-先读 README.md、docs/ASSETS.md 与 docs/VERIFICATION.md。当前为开发中工程，只有双语联系页可运行，不得宣称整站已完成。
+先读 README.md、docs/ASSETS.md 与 docs/VERIFICATION.md。当前为开发中工程，只有双语首页与联系页可运行，不得宣称整站已完成。
 
 - 保持 TypeScript strict，新增或升级依赖先获得用户批准。
 - 品牌放 config/，双语文案放 content/，主题统一由 theme.css 管理，跨页面组件放 components/，页面只负责组合。

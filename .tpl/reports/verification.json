@@ -1,0 +1,85 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-10-26T23:52:05.054Z",
+  "sourceCommit": null,
+  "sourceDigest": "6465fde228da7a4a58eb7e0ab45be24b66de745d84c8c0e24a0ffc5ceb6f6fd4",
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v24.16.0",
+    "packageManager": "pnpm@9.15.4",
+    "cleanDirectory": true,
+    "localGitClone": false
+  },
+  "checks": [
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T23:51:41.489Z",
+      "finishedAt": "2026-10-26T23:51:42.306Z"
+    },
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T23:51:42.307Z",
+      "finishedAt": "2026-10-26T23:51:44.071Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T23:51:44.072Z",
+      "finishedAt": "2026-10-26T23:51:45.824Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T23:51:45.825Z",
+      "finishedAt": "2026-10-26T23:52:04.555Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-10-26T23:52:05.054Z"
+    }
+  ],
+  "limitations": [
+    "仅包含首页及联系页；项目、博客、图库、关于和详情页未实现，不宣称整站复刻完成。",
+    "首页画廊循环、按钮、FAQ、图片加载及部分视口已实测；原站动画速度、拖拽回弹、触屏、减少动态效果和全站动效尚未逐项对照。",
+    "已拍摄首页与联系页的三端截图；功能、博客等页面的截图尚缺，不能视为完整市场验收。",
+    "参考站图片与 MiSans 的再分发许可尚未确认，不声明已取得商业授权。"
+  ]
+}

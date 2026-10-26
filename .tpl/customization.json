@@ -1,0 +1,64 @@
+{
+  "$schema": "./schemas/customization.schema.json",
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "品牌",
+      "description": "调整独立品牌名称",
+      "files": [
+        {
+          "path": "src/features/otherthing/config/brand.ts",
+          "kind": "file",
+          "purpose": "双语品牌配置"
+        }
+      ],
+      "constraints": [
+        "保留双语和无障碍文本"
+      ],
+      "checks": [
+        "typecheck",
+        "lint"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "内容",
+      "description": "修改双语内容和项目列表",
+      "files": [
+        {
+          "path": "src/features/otherthing/content",
+          "kind": "directory",
+          "purpose": "页面内容"
+        }
+      ],
+      "constraints": [
+        "同步中英文"
+      ],
+      "checks": [
+        "typecheck",
+        "lint"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "主题",
+      "description": "调整主题与响应式布局",
+      "files": [
+        {
+          "path": "src/features/otherthing/theme.css",
+          "kind": "file",
+          "purpose": "主题令牌与样式"
+        }
+      ],
+      "constraints": [
+        "保留触控、键盘和减少动态效果支持"
+      ],
+      "checks": [
+        "typecheck",
+        "lint"
+      ]
+    }
+  ]
+}
