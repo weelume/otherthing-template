@@ -3,31 +3,18 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-10-26T23:57:32.430Z",
+  "checkedAt": "2026-10-27T02:26:58.118Z",
   "sourceCommit": null,
-  "sourceDigest": "bde3ea077133a30ba5bfecca6b6903f5226d211558607c1e23d65e829d3b0cf6",
+  "sourceDigest": "fb92d1101433ee999b8ecc7a90ff67635b9f79633d5d26e90910b2004cccf6da",
   "environment": {
     "platform": "linux",
     "arch": "x64",
     "node": "v24.16.0",
     "packageManager": "pnpm@9.15.4",
-    "cleanDirectory": true,
+    "cleanDirectory": false,
     "localGitClone": false
   },
   "checks": [
-    {
-      "id": "test",
-      "cwd": ".",
-      "argv": [
-        "pnpm",
-        "run",
-        "test"
-      ],
-      "status": "passed",
-      "exitCode": 0,
-      "startedAt": "2026-10-26T23:57:06.640Z",
-      "finishedAt": "2026-10-26T23:57:07.526Z"
-    },
     {
       "id": "typecheck",
       "cwd": ".",
@@ -38,8 +25,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T23:57:07.527Z",
-      "finishedAt": "2026-10-26T23:57:09.465Z"
+      "startedAt": "2026-10-27T02:26:31.415Z",
+      "finishedAt": "2026-10-27T02:26:34.279Z"
     },
     {
       "id": "lint",
@@ -51,8 +38,21 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T23:57:09.466Z",
-      "finishedAt": "2026-10-26T23:57:14.400Z"
+      "startedAt": "2026-10-27T02:26:34.279Z",
+      "finishedAt": "2026-10-27T02:26:37.945Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-27T02:26:37.945Z",
+      "finishedAt": "2026-10-27T02:26:38.785Z"
     },
     {
       "id": "build",
@@ -64,8 +64,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T23:57:14.401Z",
-      "finishedAt": "2026-10-26T23:57:31.855Z"
+      "startedAt": "2026-10-27T02:26:38.785Z",
+      "finishedAt": "2026-10-27T02:26:57.693Z"
     }
   ],
   "services": [
@@ -73,13 +73,13 @@
       "id": "web",
       "status": "passed",
       "stopped": true,
-      "checkedAt": "2026-10-26T23:57:32.430Z"
+      "checkedAt": "2026-10-27T02:26:58.118Z"
     }
   ],
   "limitations": [
-    "仅包含首页及联系页；项目、博客、图库、关于和详情页未实现，不宣称整站复刻完成。",
-    "首页画廊循环、按钮、FAQ、图片加载及部分视口已实测；原站动画速度、拖拽回弹、触屏、减少动态效果和全站动效尚未逐项对照。",
-    "已拍摄首页与联系页的三端截图；功能、博客等页面的截图尚缺，不能视为完整市场验收。",
-    "参考站图片与 MiSans 的再分发许可尚未确认，不声明已取得商业授权。"
+    "应用检查与 54 路由运行验证通过；原站轮播速度、惯性衰减及全部缓动参数未逐帧测量，不声明逐帧一致。",
+    "采用 Poppins / MiSans 与主题字号，区别于参考站超大手写标题；品牌由配置注入。",
+    "三端使用内置浏览器视口测试，未在实体触摸设备验证，也未切换操作系统减少动态效果设置。",
+    "原站图像与 MiSans 的商业再分发许可尚未核实，保留 unlicensed 声明。"
   ]
 }

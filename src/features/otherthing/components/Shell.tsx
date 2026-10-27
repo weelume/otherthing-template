@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useEffect, type ReactNode } from 'react'
 import { Navigation } from './Navigation'
+import { PaperArt } from './PaperArt'
 import { copy } from '../content/common'
 import { socialLinks } from '../config/brand'
 import { useOtherthingHost } from '../host'
@@ -10,7 +11,7 @@ import { pageHref } from '../routing'
 import type { PageProps } from '../types'
 import '../theme.css'
 
-export function Shell({ locale, basePath, children, contact = false }: PageProps & { children: ReactNode; contact?: boolean }) {
+export function Shell({ locale, basePath, children, contact = false, minimal = false, backPath }: PageProps & { children: ReactNode; contact?: boolean; minimal?: boolean; backPath?: string }) {
   const host = useOtherthingHost()
   useEffect(() => {
     const root = document.documentElement
@@ -20,15 +21,16 @@ export function Shell({ locale, basePath, children, contact = false }: PageProps
   }, [])
 
   return <div className="ot-site" lang={locale}>
-    <Navigation locale={locale} basePath={basePath} />
+    <PaperArt />
+    <Navigation locale={locale} basePath={basePath} backPath={backPath} />
     <main id="ot-main">{children}</main>
-    {!contact && <section className="ot-cta"><h2>{copy.cta[locale]}</h2><Link className="ot-blue-button" href={pageHref(basePath, 'contact')}>{copy.contact[locale]}</Link></section>}
-    <footer className="ot-footer">
+    {!contact && !minimal && <section className="ot-cta"><h2>{copy.cta[locale]}</h2><Link className="ot-blue-button" href={pageHref(basePath, 'contact')}>{copy.contact[locale]}</Link></section>}
+    {!minimal && <footer className="ot-footer">
       <svg viewBox="0 0 1100 60" aria-hidden="true"><path d="M10 22C260 16 780 65 1060 32S1010 4 920 12" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" /></svg>
       <div className="ot-social">{socialLinks.map(link => <a href={link.href} target="_blank" rel="noreferrer" key={link.label}>{link.label}</a>)}</div>
       <p>{copy.tagline[locale]}</p><p>© {new Date().getFullYear()} {host.name[locale]}</p>
       {host.filing}
-    </footer>
+    </footer>}
     {host.marketplaceHref && <Link className="ot-market" href={host.marketplaceHref} aria-label={host.marketplaceAriaLabel?.[locale]}>{host.logo && <img src={host.logo} alt="" width="24" height="24" />}<span>{host.name[locale]}</span></Link>}
   </div>
 }

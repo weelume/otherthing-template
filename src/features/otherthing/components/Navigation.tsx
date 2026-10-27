@@ -9,7 +9,7 @@ import { socialLinks } from '../config/brand'
 import { localeHref, pageHref } from '../routing'
 import type { PageProps } from '../types'
 
-export function Navigation({ locale, basePath }: PageProps) {
+export function Navigation({ locale, basePath, backPath }: PageProps & { backPath?: string }) {
   const [open, setOpen] = useState(false)
   const trigger = useRef<HTMLButtonElement>(null)
   const panel = useRef<HTMLElement>(null)
@@ -42,7 +42,7 @@ export function Navigation({ locale, basePath }: PageProps) {
   return <>
     <a className="ot-skip" href="#ot-main">{copy.skip[locale]}</a>
     <header className="ot-nav">
-      <button ref={trigger} type="button" aria-expanded={open} aria-controls="ot-menu" onClick={() => setOpen(value => !value)}>{(open ? copy.close : copy.menu)[locale]}</button>
+      <div><button ref={trigger} type="button" aria-expanded={open} aria-controls="ot-menu" onClick={() => setOpen(value => !value)}>{(open ? copy.close : copy.menu)[locale]}</button>{backPath && <Link href={pageHref(basePath, backPath)}> / {locale === 'zh' ? '返回' : 'Back'}</Link>}</div>
       <Link href={localeHref(pathname, '', '', locale === 'zh' ? 'en' : 'zh', basePath)} aria-label={copy.switchLanguage[locale]} onClick={event => { event.preventDefault(); router.push(localeHref(window.location.pathname, window.location.search, window.location.hash, locale === 'zh' ? 'en' : 'zh', basePath)) }}>{locale === 'zh' ? 'EN' : '中文'}</Link>
     </header>
     <AnimatePresence>

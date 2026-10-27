@@ -2,7 +2,8 @@
 
 import { useState, type FormEvent } from 'react'
 import { contactCopy as copy } from '../content/contact'
-import { ContactDoodles } from '../components/ContactDoodles'
+import { ContactDoodles } from '../components/PaperArt'
+import files from '../content/referenceFiles.json'
 import { Shell } from '../components/Shell'
 import type { PageProps } from '../types'
 
@@ -23,7 +24,7 @@ export default function ContactPage(props: PageProps) {
     <h1>{copy.heading[locale]}</h1>
     <p className="ot-worldwide">{copy.worldwide[locale]}</p><p className="ot-available">{copy.available[locale]}</p>
     <div className="ot-contact-stage"><ContactDoodles /><div className="ot-form-card ot-glass">
-      <h2>{copy.title[locale]}</h2><p>{copy.description[locale]}</p>
+      <img className="ot-contact-avatar" src={files['Sy6kjiXdnTo86fejttUzx4kyY.jpg']} alt="" /><h2>{copy.title[locale]}</h2><p>{copy.description[locale]}</p>
       <form onSubmit={submit} onChange={() => setStatus('idle')}>
         <label htmlFor="ot-name">{copy.name[locale]}</label><input id="ot-name" name="name" autoComplete="name" required maxLength={120} placeholder={copy.namePlaceholder[locale]} />
         <label htmlFor="ot-email">{copy.email[locale]}</label><input id="ot-email" name="email" type="email" autoComplete="email" required maxLength={254} placeholder={copy.emailPlaceholder[locale]} />

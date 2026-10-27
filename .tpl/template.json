@@ -3,7 +3,7 @@
   "format": "git-template",
   "formatVersion": "0.2.0",
   "id": "otherthing",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "别样创意 · 创意工作室",
   "gitUrl": "https://github.com/weelume/otherthing-template",
   "sceneId": "landing-page",
@@ -14,7 +14,7 @@
     "品牌设计",
     "双语"
   ],
-  "summary": "手绘网格风格的创意工作室模板；首页和联系页可预览，其他内页待完善。",
+  "summary": "手绘网格风格的双语创意工作室，包含项目筛选、作品详情、博客、文章、可拖拽图库、关于与联系页。",
   "accentColor": "#258df7",
   "cover": "assets/desktop-home.webp",
   "screenshots": [
@@ -28,13 +28,67 @@
       "pageSlug": ""
     },
     {
+      "src": "assets/desktop-projects.webp",
+      "alt": "项目筛选 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "projects"
+    },
+    {
+      "src": "assets/desktop-blogs.webp",
+      "alt": "博客 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "blogs"
+    },
+    {
+      "src": "assets/desktop-about.webp",
+      "alt": "关于 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "about"
+    },
+    {
+      "src": "assets/desktop-gallery.webp",
+      "alt": "图库 · desktop",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "surfaceId": "site",
+      "pageSlug": "gallery"
+    },
+    {
       "src": "assets/desktop-contact.webp",
-      "alt": "联系页 · desktop",
+      "alt": "联系 · desktop",
       "device": "desktop",
       "width": 1430,
       "height": 993,
       "surfaceId": "site",
       "pageSlug": "contact"
+    },
+    {
+      "src": "assets/desktop-project.webp",
+      "alt": "项目详情 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "projects/bad-bag"
+    },
+    {
+      "src": "assets/desktop-article.webp",
+      "alt": "文章详情 · desktop",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "blogs/first-subscribers-copy"
     },
     {
       "src": "assets/tablet-home.webp",
@@ -46,13 +100,67 @@
       "pageSlug": ""
     },
     {
+      "src": "assets/tablet-projects.webp",
+      "alt": "项目筛选 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "projects"
+    },
+    {
+      "src": "assets/tablet-blogs.webp",
+      "alt": "博客 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "blogs"
+    },
+    {
+      "src": "assets/tablet-about.webp",
+      "alt": "关于 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "about"
+    },
+    {
+      "src": "assets/tablet-gallery.webp",
+      "alt": "图库 · tablet",
+      "device": "tablet",
+      "width": 834,
+      "height": 1180,
+      "surfaceId": "site",
+      "pageSlug": "gallery"
+    },
+    {
       "src": "assets/tablet-contact.webp",
-      "alt": "联系页 · tablet",
+      "alt": "联系 · tablet",
       "device": "tablet",
       "width": 824,
       "height": 1166,
       "surfaceId": "site",
       "pageSlug": "contact"
+    },
+    {
+      "src": "assets/tablet-project.webp",
+      "alt": "项目详情 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "projects/bad-bag"
+    },
+    {
+      "src": "assets/tablet-article.webp",
+      "alt": "文章详情 · tablet",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "blogs/first-subscribers-copy"
     },
     {
       "src": "assets/mobile-home.webp",
@@ -64,13 +172,67 @@
       "pageSlug": ""
     },
     {
+      "src": "assets/mobile-projects.webp",
+      "alt": "项目筛选 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "projects"
+    },
+    {
+      "src": "assets/mobile-blogs.webp",
+      "alt": "博客 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "blogs"
+    },
+    {
+      "src": "assets/mobile-about.webp",
+      "alt": "关于 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "about"
+    },
+    {
+      "src": "assets/mobile-gallery.webp",
+      "alt": "图库 · mobile",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "surfaceId": "site",
+      "pageSlug": "gallery"
+    },
+    {
       "src": "assets/mobile-contact.webp",
-      "alt": "联系页 · mobile",
+      "alt": "联系 · mobile",
       "device": "mobile",
       "width": 380,
       "height": 822,
       "surfaceId": "site",
       "pageSlug": "contact"
+    },
+    {
+      "src": "assets/mobile-project.webp",
+      "alt": "项目详情 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "projects/bad-bag"
+    },
+    {
+      "src": "assets/mobile-article.webp",
+      "alt": "文章详情 · mobile",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "blogs/first-subscribers-copy"
     }
   ],
   "surfaces": [
@@ -95,6 +257,181 @@
           "title": "联系",
           "localizedTitles": {
             "en": "Contact"
+          }
+        },
+        {
+          "slug": "blogs",
+          "title": "博客",
+          "localizedTitles": {
+            "en": "Blogs"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "projects",
+          "title": "项目",
+          "localizedTitles": {
+            "en": "Projects"
+          }
+        },
+        {
+          "slug": "gallery",
+          "title": "图库",
+          "localizedTitles": {
+            "en": "Gallery"
+          }
+        },
+        {
+          "slug": "projects/bad-bag",
+          "title": "Bad Bag",
+          "localizedTitles": {
+            "en": "Bad Bag"
+          }
+        },
+        {
+          "slug": "projects/dv-copy",
+          "title": "Juntada",
+          "localizedTitles": {
+            "en": "Juntada"
+          }
+        },
+        {
+          "slug": "projects/almost-human",
+          "title": "Almost Human",
+          "localizedTitles": {
+            "en": "Almost Human"
+          }
+        },
+        {
+          "slug": "projects/cool-animals-copy-copy",
+          "title": "Happy B:)",
+          "localizedTitles": {
+            "en": "Happy B:)"
+          }
+        },
+        {
+          "slug": "projects/cool-animals-copy",
+          "title": "Grounded",
+          "localizedTitles": {
+            "en": "Grounded"
+          }
+        },
+        {
+          "slug": "projects/crave-copy-2",
+          "title": "L Cuaderno",
+          "localizedTitles": {
+            "en": "L Cuaderno"
+          }
+        },
+        {
+          "slug": "projects/crave-copy",
+          "title": "Destroy",
+          "localizedTitles": {
+            "en": "Destroy"
+          }
+        },
+        {
+          "slug": "projects/cool-animals",
+          "title": "Cowboy(g)",
+          "localizedTitles": {
+            "en": "Cowboy(g)"
+          }
+        },
+        {
+          "slug": "projects/flower",
+          "title": "Flowers",
+          "localizedTitles": {
+            "en": "Flowers"
+          }
+        },
+        {
+          "slug": "projects/dv",
+          "title": "3 Jeans",
+          "localizedTitles": {
+            "en": "3 Jeans"
+          }
+        },
+        {
+          "slug": "projects/crave",
+          "title": "Crave",
+          "localizedTitles": {
+            "en": "Crave"
+          }
+        },
+        {
+          "slug": "blogs/first-subscribers-copy",
+          "title": "建立更好的创意系统",
+          "localizedTitles": {
+            "en": "Building Better Creative Systems"
+          }
+        },
+        {
+          "slug": "blogs/first-subscribers",
+          "title": "为什么最初的订阅者最重要",
+          "localizedTitles": {
+            "en": "Why Your First Subscribers Matter Most"
+          }
+        },
+        {
+          "slug": "blogs/favorite-writing-tools",
+          "title": "我真正使用的写作工具",
+          "localizedTitles": {
+            "en": "The Only Writing Tools I Actually Use"
+          }
+        },
+        {
+          "slug": "blogs/favorite-writing-tools-copy",
+          "title": "走进创意过程",
+          "localizedTitles": {
+            "en": "Inside the Creative Process"
+          }
+        },
+        {
+          "slug": "blogs/hobby-to-income",
+          "title": "我如何将爱好转化为收入",
+          "localizedTitles": {
+            "en": "How I Turned a Hobby Into Real Income"
+          }
+        },
+        {
+          "slug": "blogs/creative-burnout-copy",
+          "title": "探索视觉创作",
+          "localizedTitles": {
+            "en": "Exploring visual work."
+          }
+        },
+        {
+          "slug": "blogs/creative-burnout",
+          "title": "我如何走出创意倦怠",
+          "localizedTitles": {
+            "en": "How I Get Through Creative Burnout"
+          }
+        },
+        {
+          "slug": "blogs/consistent-content-truth",
+          "title": "持续创作的真相",
+          "localizedTitles": {
+            "en": "The Truth About Consistent Content"
+          }
+        },
+        {
+          "slug": "blogs/sharing-numbers",
+          "title": "公开分享我的收入",
+          "localizedTitles": {
+            "en": "Sharing My Earnings Online"
+          }
+        },
+        {
+          "slug": "blogs/sharing-numbers-copy",
+          "title": "数字创意方向笔记",
+          "localizedTitles": {
+            "en": "Notes on Digital Direction"
           }
         }
       ]
